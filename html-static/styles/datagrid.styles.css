@@ -1,0 +1,208 @@
+/* DataGrid styles */
+
+.dataGrid {
+    border: 1px solid #666666;
+    margin: 5px 0;
+	width: 100%;
+}
+.dataGrid tr th{
+    border-top: 1px solid #9C9C9C;
+    border-right: 0px;
+    border-bottom: 1px solid #666666;
+    border-left: 1px solid #9C9C9C;
+}
+.dataGrid tr th,
+.dataGrid tr th a{
+    color: #383838;
+}
+.dataGrid td,
+.dataGrid th{
+    /*border-bottom: 1px solid #9c9c9c;
+    border-left: 1px solid #9c9c9c;*/
+}
+.dataGrid th,
+.dataGrid .odd th,
+.dataGrid .even th{
+    background: #7e869b;
+    padding: 8px 4px;
+}
+.dataGrid td{
+    background: #ffffff;
+    padding: 4px;
+}
+.dataGrid th,
+.dataGrid td{
+    text-align: center;
+}
+.dataGrid td a{
+    color: #4A5B77;
+	display: block;
+	height: 16px;
+	width: 16px;
+	text-decoration: none;
+}
+.dataGrid td a:hover, .dataGrid td a:focus{
+    color:#b9b9b9;
+    text-decoration: none;
+}
+.dataGrid .even td{
+    background: #d5dae1;
+}
+.dataGrid th.selected{
+    background-color: #7e869b  !important;
+}
+.dataGrid .selected{
+    background-color: #dce2f1  !important;
+}
+.dataGrid th a{
+    text-decoration:none;
+}
+.dataGrid th a b{
+    margin-left: 10px;
+    padding: 1px 6px;
+    width: 15px;
+    text-align:center;
+}
+.dataGrid th a.sortOrderAsc b{
+    background:url(../images/components/datagrid/bullet_top.gif) no-repeat;
+}
+.dataGrid th a.sortOrderDesc b{
+    background:url(../images/components/datagrid/bullet_bottom.gif) no-repeat;
+}
+.ctitle_outer{
+    clear: both;
+    position:relative;
+    vertical-align: middle;
+}
+
+/* dataGrid Nav*/
+.dataGridNav{
+    float: left;
+}
+.dataGridNav a{
+    color: #4A5B77;
+}
+.dataGridNav .cdNavPage a:hover, .dataGridNav .cdNavPage a:focus,
+.dataGridNav .cdNavPageli a:hover, .dataGridNav .cdNavPage li a:focus{
+    color:#ffffff;
+    display: block;
+    width: 20px;
+    height: 16px;
+    background: #7e869b;
+}
+.dataGridNavP{
+    /*padding: 0px 35px;*/
+}
+.dataGridNav input.pageGo,
+.dataGridNav input.pageDisplay{
+    width: 55px;
+    /*-height: 14px;*/
+}
+.dataGridNav span {
+    display: block;
+    float: left;
+}
+.dataGridNav label,
+.dataGridNav span{
+    margin-top: 3px;
+}
+.dataGridNav input.pageGo,
+.dataGridNav input.pageDisplay{
+    font-size: 12px;
+    margin: 2px 3px 0px 0px;
+    height: 17px;
+    line-height:17px;
+    vertical-align: top;
+}
+* + html .dataGridNav input.pageGo,
+* + html .dataGridNav input.pageDisplay{
+    font-size: 11px;
+    margin: 2px 3px 0px 0px;
+    height: 12px;
+    line-height:12px;
+    vertical-align: top;
+}
+.dataGridNav input.pageGoBt{
+    background: url(../images/components/datagrid/bt.png) no-repeat;
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    padding: 0;
+}
+.dataGridNav .ctitl_dataGrid{
+    float: left;
+}
+.dataGridNav .ctitl_dataGrid li{
+    float:left;
+    background: #7ea1c1;
+    border: 1px solid #696969;
+}
+.dataGridNav ul li{
+    list-style:none;
+}
+
+.dataGridNav .cdNavPage li.selected,
+.dataGridNav .cdNavPage li.selected a{
+    background: #7e869b;
+    color: #ffffff;
+    font-weight: bold;
+}
+ul.cdNavPage,
+ul.cdNavPage li{
+    display:block;
+    float: left;
+    height:16px;
+    margin: 1px 0px;
+
+}
+ul.cdNavPage{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+ul.cdNavPage li {
+    width: 20px;
+    text-align: center;
+}
+ul.cdNavL{
+    padding: 0 !important;
+}
+.cdNavL li,
+.cdNavR li{
+    display: block;
+    border: 0px !important;
+    background: none !important;
+}
+ul.cdNavL li a,
+ul.cdNavR li a{
+    display:block;
+    width: 22px;
+    height: 22px;
+    margin: 0px 1px;
+    text-decoration:none;
+}
+ul.cdNavL li a.prev{
+    background:url(../images/components/datagrid/prev.png) no-repeat;
+}
+ul.cdNavL li a.prevP{
+    background:url(../images/components/datagrid/prev_p.png) no-repeat;
+}
+ul.cdNavR li a.next{
+    background:url(../images/components/datagrid/next.png) no-repeat;
+}
+ul.cdNavR li a.nextP{
+    background:url(../images/components/datagrid/next_p.png) no-repeat;
+}
+.dgEditLink{
+	background: transparent url(../images/icons/editUserIcon.png) no-repeat;
+}
+.dgDelLink{
+	background: transparent url(../images/icons/deleteUserIcon.png) no-repeat;
+}
+.btnAddNew{
+	background: transparent url(../images/icons/add.png) no-repeat scroll left top;
+	width: 22px;
+	height: 22px;
+}
+#btnAddNew{
+	display: none;	
+}

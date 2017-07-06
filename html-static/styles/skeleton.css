@@ -1,0 +1,366 @@
+/**
+ * Ui CCS Style
+ *
+ * @author     Vladimir G. Mechkauskas <lestatbbk@gmail.com>
+ * @copyright  (c) 2004-2009 by "SolArt xIT Ltd."
+ * @version    1
+ * 
+ */
+body {
+	background: #101010 url(../images/bg.gif) repeat;
+	font:0.8em Verdana;
+	color:#FFFFFF;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+}
+/* Global Float */
+.floatLeft{
+	float: left;
+}
+.floatRight{
+	float: right;
+}
+/* Clear Fix */
+.clearAfter{
+	content:".";
+    display: block;
+    height: 1px;
+    clear: both;
+}
+/* List style*/
+ul li{
+	list-style: none;
+}
+a:link{}
+a:visited{}
+a:hover{}
+a:active{}
+
+img, fieldset{
+	border: none;
+}
+h1{}
+h2{}
+h3{}
+h4{}
+h5{}
+
+#debugArea{
+	color: #323232;	
+}
+
+/* Root layout */
+#root{
+	width: 80%;
+	min-width: 800px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+/* Header */
+#header{}
+
+/* Top Menu */
+.outerTopMenu,
+#topMenu{	
+	height: 53px;
+}
+.outerTopMenu{
+	background: transparent url(../images/top_menu/top_menu_left_corner.png) no-repeat left top;
+	width: 100%;
+	overflow: hidden;
+}
+#topMenu{
+	background: transparent url(../images/top_menu/top_menu_right_corner.png) no-repeat right top;
+	margin-left: 9px;
+}
+#topMenu li:first-child{
+    background: none;	
+}
+#topMenu li:first-child,
+#topMenu li:first-child a{
+	/*border: none;*/	
+}
+#topMenu li.lastChild{
+	border-right: 1px solid #dcdfe1;
+}
+#topMenu li:last-child{
+	border-right: 1px solid #dcdfe1;
+}
+#topMenu li.lastChild a{	
+	border-right: 1px solid #90969c;
+}
+#topMenu li:last-child a{	
+	border-right: 1px solid #90969c;
+}
+#topMenu li, #topMenu li a, #topMenu li a:hover, #topMenu li a span{
+	height: 51px;
+	display: block;
+}
+#topMenu li{
+	float: left;
+	margin-top: 1px;
+	border-left: 1px solid #dcdfe1;
+}
+#topMenu li a{
+	font: 16px Verdana;
+	color: #323232;
+	border-left: 1px solid #90969c;
+	text-shadow: 1px 1px 1px #FFFFFF;
+	text-decoration: none;
+}
+#topMenu li a:hover{
+	background: #bac0c6 url(../images/top_menu/hover_top_menu.png) repeat-x;
+	color: #a30000;		
+}
+#topMenu li a span{
+	padding: 15px 50px;
+	height: 21px !important;
+}
+
+/* Content */
+#content{
+	margin-top: 25px;
+}
+.contentPanel,
+.contentPanel .topPanel,
+.contentPanel .bottomPanel{
+	width:100%;
+}
+.topPanel{
+	background: transparent url(../images/panel/module_rounded_grey_header_grey.png) no-repeat;
+	width: 100%;
+	height: 34px;
+}
+.rightTopPanel{
+	background: transparent url(../images/panel/module_rounded_grey_header_grey.png) no-repeat scroll right -40px;
+	width: 100%;
+	height: 34px;
+}
+.centerTopPanel{
+	background: transparent url(../images/panel/module_rounded_grey_header_grey.png) repeat-x scroll right -80px;
+	margin: 0 30px;
+	height: 34px;
+}
+/* - - - - - - - - - - - */
+.middlePanel{
+	background: transparent url(../images/panel/bg_middle_left.png) repeat-y scroll left top;
+	border-left: 1px solid #b6bfc6;
+}
+.rightMiddlePanel{
+	background: transparent url(../images/panel/bg_middle_right.png) repeat-y scroll 100% top;
+	border-right: 1px solid #b6bfc6;
+}
+.centerMiddleTopPanel{
+	background: #dbe0e5;
+	margin: 0 28px;
+}
+.centerMiddleTopPanel,
+.wpMiddleInner{
+	min-height: 350px;
+}
+/* - - - - - - - - - -- - - */
+
+.bottomPanel{
+	background: transparent url(../images/panel/module_rounded_grey_header_grey.png) no-repeat left -119px;
+	width: 100%;
+	height: 11px;
+}
+.rightBottomPanel{
+	background: transparent url(../images/panel/module_rounded_grey_header_grey.png) no-repeat scroll right -134px;
+	width: 100%;
+	height: 11px;
+}
+.centerBottomPanel{
+	background: transparent url(../images/panel/module_rounded_grey_header_grey.png) repeat-x scroll right -151px;
+	margin: 0 30px;
+	height: 11px;
+}
+/* * */
+.whitePanel{}
+.whitePanel .wpTop,
+.whitePanel .wpTop *{
+    line-height:8px;
+    font-size:1px;
+}
+.whitePanel .wpBottom,
+.whitePanel .wpBottom *{
+    line-height:8px;
+    font-size:1px;
+}
+html>/**/body .whitePanel .wpTop,
+html>/**/body .whitePanel .wpTop *{
+    height:8px;
+    overflow:hidden;
+}
+html>/**/body .whitePanel .wpBottom,
+html>/**/body .whitePanel .wpBottom *{
+    height:8px;
+    overflow:hidden;
+}
+.whitePanel .wpTop{
+    background:url(../images/panel/bg_white_panel_corner.png) left top no-repeat;
+}
+.whitePanel .wpTop div{
+    background:url(../images/panel/bg_white_panel_corner.png) right top no-repeat;
+    margin-left:8px;
+}
+.whitePanel .wpMiddle{
+    background: url(../images/panel/bg_left_repeat_y.png) repeat-y left top;
+}
+.whitePanel .wpMiddle div.wpMiddleInner{
+	background: #ffffff url(../images/panel/bg_right_repeat_y.png) repeat-y right top;
+    padding: 0px 15px 0px 5px;
+	margin-left: 8px;
+    overflow: hidden;
+	color: #323232;	 
+	text-align: justify;
+}
+div.wpMiddleInnerContent{
+	background: #f8f9fa url(../images/panel/bg_white_panel_corner.png) repeat-x;
+	overflow: hidden;	
+}
+.wpMiddle h2{
+    color: #515e76;
+    font: 17px Trebuchet MS;
+    font-style:italic;
+    padding-left: 15px;
+}
+.wpMiddle p{
+    text-indent: 8px !important;
+    margin-top: 5px;
+    margin-left: 4px;
+    padding: 0 10px;
+    text-align: justify;
+    background: url(../images/panel/pIcon.gif) no-repeat left top;
+}
+.whitePanel .wpBottom{
+    background: url(../images/panel/bg_white_panel_corner.png) left bottom no-repeat;
+}
+.whitePanel .wpBottom div{
+    background: url(../images/panel/bg_white_panel_corner.png) right bottom no-repeat;
+    margin-left:8px;
+}
+/* Footer */
+#footer{
+	height:25px;
+	margin:10px auto 25px;
+	width:95%;
+	font-size: 11px;
+}
+.footerNav{}
+.footerNav li{
+	float: left;
+	margin-left: 20px;
+}
+.footerNav li a{
+	color: #eaedf2;
+	text-decoration: none;
+}
+.footerNav li a:hover{
+	color: #d09d9d;
+}
+.loginRoot .dlLogin dd input#txtLogin,
+.loginRoot .dlLogin dd input#txtPassword{
+    /*border: none;*/
+    /*height: 26px;*/
+    /*background: transparent url(../images/panel/input_bg.png) no-repeat;*/
+    width: 150px;
+}
+/*.loginRoot .wpMiddle h2{
+    padding-left: 11px;
+}
+.analytic .wpMiddle h2{
+    padding-left: 25px;
+}*/
+
+.wpMiddle h2,
+.pageMessages {
+    width: 95%;
+    margin: 0 auto;
+    padding-left: 0;
+}
+.pageMessages {
+	color: #9a0000;
+	padding-top:15px;
+}
+.wpMiddle h2{
+    /*#d5dae1*/
+    border-bottom: 1px solid #d5dae1;
+}
+
+.analytic .dlLogin {
+    padding: 100px 0;
+}
+.dlLogin{
+    width:50%;
+    margin:0 auto;
+    padding: 70px 0;
+    /*border-top: 1px solid #d5dae1;
+    border-bottom: 1px solid #d5dae1;*/
+}
+.dlLogin dt,
+.dlLogin dt label{
+    display: block;
+}
+.dlLogin dt{
+    float: left;
+    margin-right: 6px;
+    text-align: right;
+    width: 38%;
+}
+.dlLogin dt label{
+    color: #515E76;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.dlLogin dd {
+    padding-bottom:10px;
+    width: 100%;
+}
+.dlLogin dd input#txtLogin,
+.dlLogin dd input#txtEmail,
+.dlLogin dd input#txtPassword,
+.dlLogin dd input#txtPasswordRetyped,
+.dlLogin dd input#txtFirstName,
+.dlLogin dd input#txtLastName,
+#ddlGroup{
+    height: 21px;
+	width: 200px;	
+}
+.admin .dlLogin dd input#txtLogin,
+.admin .dlLogin dd input#txtEmail,
+.admin .dlLogin dd input#txtPassword,
+.admin .dlLogin dd input#txtPasswordRetyped,
+.admin .dlLogin dd input#txtFirstName,
+.admin .dlLogin dd input#txtLastName,
+.admin .dlLogin dd select#ddlGroup{
+    width: 200px;
+}
+.dlLogin dd input#ckbEnabled,
+.dlLogin dd input#ckbConfirmed,
+.dlLogin dd input#ckbRememberMe{
+    vertical-align: middle;
+}
+.btnLogin, .btnApply, .btnCancel{
+	width: 74px;
+	height: 26px;
+} 
+.btnLogin{
+	background: transparent url(../images/buttons/loginbtn.png) no-repeat scroll left top;
+}
+.btnApply{
+	background: transparent url(../images/buttons/applybtn.png) no-repeat scroll left top;	
+}
+.btnCancel{
+	background: transparent url(../images/buttons/cancelbtn.png) no-repeat scroll left top;
+}
+.dlLogin input.textField{
+	background: transparent url(../images/inputbg.png) no-repeat scroll left top;
+	/*width: 6px;*/
+	padding-left: 5px;
+	border: 0px;
+	
+}

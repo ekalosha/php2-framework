@@ -1,0 +1,10 @@
+
+
+Application:
+Application_Exception_ESecurityException:  2100-2140
+
+
+PHP2:
+PHP2\Exception\EDatabaseException:     200-230
+PHP2\Exception\EEmailException:        400-420
+PHP2\Exception\EFilesystemException:   300-330

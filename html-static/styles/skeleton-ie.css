@@ -1,0 +1,12 @@
+/**
+ * Ui CCS Style for Internet Explorer
+ *
+ * @author     Vladimir G. Mechkauskas <lestatbbk@gmail.com>
+ * @copyright  (c) 2004-2009 by "SolArt xIT Ltd."
+ * @version    1
+ * 
+ */
+#topMenu li a span{
+	font-weight: bolder; 
+	filter:dropshadow(offX=0 offY=1 Color='#ffffff')
+}

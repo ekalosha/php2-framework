@@ -1,0 +1,168 @@
+/* Debug styles */
+.debugTable {
+    border: 1px solid #666;
+    margin: 2px 0px;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Tahoma;
+    font-size: 11px;
+    text-align: left;
+}
+
+.debugTable th {
+    padding: 3px 4px;
+    border: 1px solid #666;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.debugTable td { /*apadding: 3px 7px;*/
+    border: 1px solid #666;
+    padding: 3px 4px;
+}
+
+.debugTable .execTime {
+    text-align: right;
+    width: 50px;
+}
+
+.debugTable .lineNum {
+    text-align: left;
+    vertical-align: top;
+    width: 20px;
+}
+
+.debugTable .total {
+    text-align: right;
+    font-weight: bold;
+    color: red;
+    padding-right: 5px;
+    padding-bottom: 4px;
+    padding: 5px 5px 2px 2px;
+}
+
+table .invalidQuery td {
+    color: Red;
+    font-weight: bold;
+    background-color: #ffffe0;
+}
+
+table .invalidQuery td.queryText {
+    font-weight: bold;
+}
+
+table .invalidQuery td .dbErrorText {
+    color: Black;
+    font-weight: bold;
+    background-color: #ffffe0;
+    padding: 10px 2px 2px 2px;
+}
+
+table .invalidQuery td .dbErrorText span {
+    color: Red;
+    font-weight: bold;
+}
+
+table .needsOptimization td {
+    color: Blue;
+    font-weight: bold;
+    background-color: #d3d3d3;
+}
+
+table .successQuery td {
+    background-color: #ffffff;
+}
+
+/* --- Query types info table --- */
+.queryTypesInfo {
+    border: 1px solid #666;
+    margin: 2px 0 10px;
+    padding: 1px 4px 1px 5px;
+    border-collapse: collapse;
+    width: 300px;
+    font-family: Tahoma;
+    font-size: 11px;
+    text-align: left;
+}
+
+.queryTypesInfo td {
+    padding-left: 5px;
+}
+
+.debugArea {
+    padding: 0px 7px;
+    margin: 0px auto;
+    border: 1px solid #C1CAD9;
+    background-color: #fff;
+    font-family: Tahoma;
+    font-size: 11px;
+    width: 970px;
+    text-align: left;
+}
+
+.debugGroupContainer {
+    padding: 5px 9px;
+    margin: 20px 0px;
+    border: 1px solid #C1CAD9;
+    /*
+    border-top: 1px solid #3B6476;
+    border-bottom: 1px solid #3B6476;
+    border-left: 1px solid #6F7577;
+    border-right: 1px solid #6F7577;
+    */
+    background-color: #fff;
+    width: 950px;
+}
+
+.debugArea .headerText {
+    white-space: nowrap;
+    font-family: Tahoma;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: Red;
+    padding: 5px 2px 10px 2px;
+}
+
+.debugArea .tplDebugArea {
+    white-space: nowrap;
+    font-family: Tahoma;
+    font-size: 11px;
+    text-align: left;
+    font-weight: normal;
+    color: #000;
+    padding: 5px 2px 10px 2px;
+    margin: 0 0 0 50px;
+}
+
+.debugTable .variableName {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.debugTable .variableType {
+    text-align: left;
+    vertical-align: top;
+    font-weight: bold;
+    width: 80px;
+}
+
+.debugTable .traceResult {
+    text-align: left;
+    width: 100%;
+    max-width: 540px;
+    margin-left: 20px;
+    padding-bottom: 5px;
+}
+
+/* PHP Error and Warnings Part */
+
+.PHPTMPDebug {
+    font-family: Tahoma;
+    font-size: 11px;
+    text-align: left;
+    font-weight: normal;
+    padding: 4px 10px;
+    border: 1px solid #666;
+}
